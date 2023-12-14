@@ -1,0 +1,21 @@
+"""
+Capital indexes
+Write a function named capital_indexes. The function takes a single parameter, which is a string. Your function should return a list of all the indexes in the string that have capital letters.
+
+For example, calling capital_indexes("HeLlO") should return the list [0, 2, 4].
+"""
+import pdb
+def capital_index(argument):
+    #pdb.set_trace()
+    capital_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    result = []
+    for i,char in enumerate(argument):
+        if char in capital_letters:
+            result.append(i)
+
+    return result
+
+
+if __name__ == "__main__":
+    result = capital_index("HeLlO")
+    print(result)

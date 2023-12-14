@@ -1,0 +1,15 @@
+"""
+Capital indexes
+Write a function named capital_indexes. The function takes a single parameter, which is a string. Your function should return a list of all the indexes in the string that have capital letters.
+
+For example, calling capital_indexes("HeLlO") should return the list [0, 2, 4].
+"""
+def capital_index(argument):
+    capital_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    result = [ i for i in range(len(argument)) if argument[i] in capital_letters]
+    return result
+
+if __name__ == "__main__":
+    result = capital_index("HeLlO")
+    print(result)
+    
